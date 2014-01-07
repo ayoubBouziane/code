@@ -35,8 +35,7 @@
 %
 % Version : 1.0 Dec 9, 2013
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-function [CBest, svmModels, gammaOut] = svmCrossValid(libSVMpath, trainFtr, trainGroup,...
-                                                      ClassLabel, C, numOfFold, fNeedModel,fUniqueC, fPrecomputed)   
+function [CBest, svmModels, gammaOut] = svmCrossValid(libSVMpath, trainFtr, trainGroup, ClassLabel, C, numOfFold, fNeedModel,fUniqueC, fPrecomputed)   
     %% pre-settings
     addpath(libSVMpath);
     numClassifier = size(trainGroup,2);
